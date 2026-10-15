@@ -129,7 +129,6 @@ end
 -- the machine can actually receive (resolved from the fluid box filters).
 local function validate_entity_temperatures(entity)
     local fluid_max = nil
-    local fuel_filter, oxidizer_filter = nil, nil
 
     local function scan_box(box)
         if type(box) ~= "table" or type(box.filter) ~= "string" then
