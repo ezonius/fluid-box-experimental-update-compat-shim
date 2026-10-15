@@ -1,0 +1,16 @@
+{
+  "name": "fluid-box-experimental-update-compat-shim",
+  "version": "1.0.1",
+  "factorio_version": "2.1",
+  "title": "Fluid Box 2.1.22 Compat Shim",
+  "author": "ezonius",
+  "description": "Generic compatibility shim for the Factorio 2.1.22 experimental release: FluidBox::minimum_temperature/maximum_temperature were removed. Migrates them to the new machine-level minimum/maximum_input_temperature (and thruster fuel/oxidizer) properties in any mod, so broken mods load again.",
+  "dependencies": [
+    "base >= 2.0.0",
+    "? planet-muluna",
+    "? quality-seeds",
+    "? corrundum",
+    "? fluid-nutrients",
+    "? maraxsis"
+  ]
+}

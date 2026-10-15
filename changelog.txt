@@ -1,0 +1,14 @@
+ ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2026-10-15
+  Fixes:
+    - Migrated fluid box temperatures are now clamped against the fluid's own max_temperature (e.g. muluna's cycling steam turbine wanted maximum 1000 on steam, whose max is 500).
+    - Generic post-validation sweep also clamps machine-level minimum/maximum_input_temperature (and thruster fuel/oxidizer temperatures) set directly by other mods.
+Version: 1.0.0
+Date: 2026-10-15
+  Changes:
+    - Initial release.
+  Fixes:
+    - Factorio 2.1.22 removed FluidBox::minimum_temperature and maximum_temperature, which crashed loading of mods that still used them (e.g. planet-muluna's steam-engine minimum temperature). This shim migrates those values to the new machine-level minimum/maximum_input_temperature (or thruster fuel/oxidizer temperature) properties and removes any leftovers, so affected mods load again.
+    - Fluid energy sources with maximum_temperature = 0 (previously meaning "unlimited") are converted to nil, the new way to express unlimited.
+ ---------------------------------------------------------------------------------------------------
