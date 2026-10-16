@@ -6,6 +6,9 @@ on:
       - '*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -32,3 +35,9 @@ jobs:
         with:
           action: upload
           factorio-api-key: ${{ secrets.FACTORIO_MOD_API_KEY }}
+      - name: Attach zip to GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ runner.temp }}/*.zip
+          generate_release_notes: true
