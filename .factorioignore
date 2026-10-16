@@ -1,0 +1,12 @@
+# Files/dirs excluded from the published mod zip (see factorio-mod-uploader-action docs)
+.git/
+.github/
+.idea/
+.junie/
+.gitignore
+.gitattributes
+.lua-format
+.luarc.json
+README.md
+DESCRIPTION.md
+mod_info.yml

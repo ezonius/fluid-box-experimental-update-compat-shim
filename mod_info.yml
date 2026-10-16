@@ -1,0 +1,11 @@
+version: 1.0.1
+mod_info:
+  title: Fluid Box 2.1.22 Compat Shim
+  summary: Compatibility shim for the Factorio 2.1.22 fluid temperature removal — fixes broken mods.
+  category: utilities
+  license: default_mit
+  tags:
+    - fluids
+    - tweaks
+  attach_source_link: true
+  description_file: README.md
