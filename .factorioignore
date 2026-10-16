@@ -1,4 +1,5 @@
-# Files/dirs excluded from the published mod zip (see factorio-mod-uploader-action docs)
+# Files/dirs excluded from the published mod zip
+# (used by TheBrutalX/factorio-mod-uploader-action "compress" step)
 .git/
 .github/
 .idea/
@@ -10,3 +11,5 @@
 README.md
 DESCRIPTION.md
 mod_info.yml
+thumbnail.xcf
+*.zip
