@@ -30,6 +30,7 @@ jobs:
         uses: TheBrutalX/factorio-mod-uploader-action@v2
         with:
           action: compress
+          auto-update-version: 'true'
       - name: Publish mod
         uses: TheBrutalX/factorio-mod-uploader-action@v2
         with:
